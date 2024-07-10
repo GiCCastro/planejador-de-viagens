@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planejador de Viagens</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Buscar</a></li>
+                <li><a href="#">Roteiro</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h1>Bem-vindo(a) ao Planejador de Viagens!</h1>
+            <p>Seu assistente pessoal para planejar viagens perfeitas</p>
+        </section>
+        <section id="search">
+            <h1>Buscar Destinos</h1>
+            <input type="text" id="search__input" placeholder="Buscar destino">
+            <button id="search-button">Buscar</button>
+            <div id="map"></div>
+        </section>
+        <section id="itinerary">
+            <h1>Seu Roteiro</h1>
+            <ul id="itinerary__list"></ul>
+        </section>
+        <section id="details">
+            <h1>Detalhes do Local</h1>
+            <div id="location__details"></div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Planejador de Viagens. Todos os direitos reservados.</p>
+        <p>Este site utiliza a API do Google Maps. Saiba mais <a href="https://developers.google.com/maps/documentation/javascript/overview" target="_blank">aqui</a>.</p>
+    </footer>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCiHVhCQ8-hr6aLiJ7t3UUBwWqAnaGY-RY&callback=initMap" async defer></script>
+</body>
+</html>
